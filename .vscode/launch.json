@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/visha/git-figuring out/figuring-out",
-      "program": "c:/Users/visha/git-figuring out/figuring-out/build/Debug/outDebug",
+      "cwd": ".",
+      "program": "${workspaceFolder}/c/c.exe",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
