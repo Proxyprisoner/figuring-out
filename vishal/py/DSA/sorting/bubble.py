@@ -16,8 +16,7 @@ def bubble_sort(arr):
 
         print("Result after pass:", arr)
 
-# Test
-arr = [5, 3, 8, 4, 2]
-bubble_sort(arr)
-
-print("\nFinal Sorted Array:", arr)
+n = input("Input the unsorted array: ")
+n = n.strip("[]")
+n = list(map(int, n.split(",")))
+bubble_sort(n)
