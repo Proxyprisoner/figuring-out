@@ -4,31 +4,6 @@ a shared repo where we dump practice code while learning git and github. first y
 
 ---
 
-## what's in here
-
-```
-├── vishal/
-│   ├── c/
-│   │   ├── c.c            # hello world
-│   │   ├── prime.c        # prime number check
-│   │   └── stringswap.c   # splits a string into words
-│   ├── py/
-│   │   ├── DSA/
-│   │   │   ├── sorting/
-│   │   │   │   ├── bubble.py
-│   │   │   │   └── insertion.py
-│   │   │   └── searching/
-│   │   │       └── binary search.py
-│   │   ├── oops/
-│   │   │   └── main.py
-│   │   └── multiplication_nbn.py
-│   └── leet/
-│       └── 43.py
-└── sarvesh/
-    └── test.txt
-```
-
----
 
 ## how to contribute
 
