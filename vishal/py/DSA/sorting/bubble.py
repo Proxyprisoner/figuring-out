@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/py/DSA/sorting/bubble.py"
 def bubble_sort(arr):
     n = len(arr)
 

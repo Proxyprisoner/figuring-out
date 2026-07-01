@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/py/Sieve of Eratosthenes.py"
 def sieve(n):
     prime = [True] * (n + 1)
     prime[0] = prime[1] = False

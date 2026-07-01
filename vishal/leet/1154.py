@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/leet/1154.py"
 class Solution(object):
     def dayOfYear(self, date):
         year, month, day = map(int, date.split('-'))

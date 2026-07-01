@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/py/DSA/Bit manipulation/addtion without +.py"
 a = int(input("Enter first number: "))
 b = int(input("Enter second number: "))
 i = 1

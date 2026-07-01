@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/py/DSA/Bit manipulation/even odd.py"
 """
 for all even numbers, the last bit is 0 and for odd numbers, 
 the last bit is 1. So we can check if a number is even or odd 

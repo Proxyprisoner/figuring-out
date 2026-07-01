@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/py/Kaprekar's Constant visualizer.py"
 # Kaprekar's Constant Visualizer
 # This program demonstrates the process of reaching Kaprekar's constant (6174)
 # from any 4-digit number (with at least two different digits) using the Kaprekar routine.

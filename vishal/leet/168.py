@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/leet/168.py"
 class Solution:
     def convertToTitle(self, columnNumber):
         res = ""

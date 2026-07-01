@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/leet/54.py"
 def spiralOrder(matrix):
     if not matrix:
         return []

@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/py/oops/main.py"
 class students:
     def __init__(self,name,age):
         self.name=name

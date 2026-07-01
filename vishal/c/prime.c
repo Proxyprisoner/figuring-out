@@ -1,3 +1,4 @@
+/* Run in terminal: gcc "vishal/c/prime.c" -o "prime.exe"; .\prime.exe */
 #include<stdio.h>
 int main(){
     int n, i, flag = 0;

@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/leet/74.py"
 class Solution(object):
     def searchMatrix(self, matrix, target):
         if not matrix or not matrix[0]:

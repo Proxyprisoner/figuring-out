@@ -1,3 +1,4 @@
+/* Run in terminal: gcc "vishal/c/Kaprekar's Constant visualizer.c" -o "Kaprekar.exe"; .\Kaprekar.exe */
 /*
  * Kaprekar's Constant Visualizer
  * This program demonstrates the process of reaching Kaprekar's constant (6174)

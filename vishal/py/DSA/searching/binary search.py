@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/py/DSA/searching/binary search.py"
 n = input("input the sorted array: ")
 n = n.strip("[]")
 n = list(map(int, n.split(",")))

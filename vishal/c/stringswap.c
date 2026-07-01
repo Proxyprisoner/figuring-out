@@ -1,3 +1,4 @@
+/* Run in terminal: gcc "vishal/c/stringswap.c" -o "stringswap.exe"; .\stringswap.exe */
 #include<stdio.h>
 int main(){
     char str1[100],str2[20][200];

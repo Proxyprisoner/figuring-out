@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/py/multiplication_nbn.py"
 #leetcode 43
 a="248"
 b="245"

@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/py/multiplication_recurssive.py"
 def karatsuba(x, y, space=""):
     print(space + f"{x}X{y}")
 

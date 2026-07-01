@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/py/DSA/sorting/insertion.py"
 n = input("Input the unsorted array: ")
 n = n.strip("[]")
 n = list(map(int, n.split(",")))

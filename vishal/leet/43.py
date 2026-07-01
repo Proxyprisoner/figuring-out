@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/leet/43.py"
 #leetcode 43
 a="248"
 b="245"

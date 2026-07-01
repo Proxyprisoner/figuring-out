@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/leet/171.py"
 class Solution(object):
     def titleToNumber(self, columnTitle):
         res = 0
