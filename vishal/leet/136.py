@@ -1,4 +1,5 @@
-def singleNumber(self, nums):
+#Run in terminal: python "vishal/leet/136.py"
+def singleNumber(nums):
         result = 0
 
         for num in nums:
