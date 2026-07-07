@@ -1,0 +1,353 @@
+[
+    {
+        "label": "multiplication_nbn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "multiplication_nbn",
+        "description": "multiplication_nbn",
+        "detail": "multiplication_nbn",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "vishal.leet.1154",
+        "description": "vishal.leet.1154",
+        "peekOfCode": "class Solution(object):\n    def dayOfYear(self, date):\n        year, month, day = map(int, date.split('-'))\n        days = [31,28,31,30,31,30,31,31,30,31,30,31]\n        if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):\n            days[1] = 29\n        total = sum(days[:month-1]) + day\n        return total",
+        "detail": "vishal.leet.1154",
+        "documentation": {}
+    },
+    {
+        "label": "singleNumber",
+        "kind": 2,
+        "importPath": "vishal.leet.136",
+        "description": "vishal.leet.136",
+        "peekOfCode": "def singleNumber(nums):\n        result = 0\n        for num in nums:\n            result ^= num\n        return result\narr=[4, 1, 2, 1, 2]\nprint(singleNumber(arr))",
+        "detail": "vishal.leet.136",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "vishal.leet.168",
+        "description": "vishal.leet.168",
+        "peekOfCode": "class Solution:\n    def convertToTitle(self, columnNumber):\n        res = \"\"\n        while columnNumber > 0:\n            columnNumber -= 1\n            res = chr((columnNumber % 26) + ord(\"A\")) + res\n            columnNumber //= 26\n        return res",
+        "detail": "vishal.leet.168",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "vishal.leet.171",
+        "description": "vishal.leet.171",
+        "peekOfCode": "class Solution(object):\n    def titleToNumber(self, columnTitle):\n        res = 0\n        for ch in columnTitle:\n            res=res*26+(ord(ch)-ord('A')+1)\n        return res",
+        "detail": "vishal.leet.171",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "vishal.leet.172",
+        "description": "vishal.leet.172",
+        "peekOfCode": "class Solution(object):\n    def trailingZeroes(self, n):\n        count=0\n        while(n>0):\n            n//=5\n            count+=n\n        return count",
+        "detail": "vishal.leet.172",
+        "documentation": {}
+    },
+    {
+        "label": "containsDuplicate",
+        "kind": 2,
+        "importPath": "vishal.leet.217",
+        "description": "vishal.leet.217",
+        "peekOfCode": "def containsDuplicate(self, nums):\n        seen = set()\n        for num in nums:\n            if num in seen:\n                return True\n            seen.add(num)\n        return False\ndef containsDuplicate2(self, nums):\n        temp = set(nums)\n        if len(temp) != len(nums):",
+        "detail": "vishal.leet.217",
+        "documentation": {}
+    },
+    {
+        "label": "containsDuplicate2",
+        "kind": 2,
+        "importPath": "vishal.leet.217",
+        "description": "vishal.leet.217",
+        "peekOfCode": "def containsDuplicate2(self, nums):\n        temp = set(nums)\n        if len(temp) != len(nums):\n            return True \n        return False       \ndef containsDuplicate3(self, nums):\n        dup=[]\n        org=[]\n        seen=[]\n        for i in nums:",
+        "detail": "vishal.leet.217",
+        "documentation": {}
+    },
+    {
+        "label": "containsDuplicate3",
+        "kind": 2,
+        "importPath": "vishal.leet.217",
+        "description": "vishal.leet.217",
+        "peekOfCode": "def containsDuplicate3(self, nums):\n        dup=[]\n        org=[]\n        seen=[]\n        for i in nums:\n            if i not in dup:\n                dup.append(i)\n            else:\n                seen.append(i)\n        if seen:",
+        "detail": "vishal.leet.217",
+        "documentation": {}
+    },
+    {
+        "label": "spiralOrder",
+        "kind": 2,
+        "importPath": "vishal.leet.54",
+        "description": "vishal.leet.54",
+        "peekOfCode": "def spiralOrder(matrix):\n    if not matrix:\n        return []\n    res = []\n    top, bottom = 0, len(matrix) - 1\n    left, right = 0, len(matrix[0]) - 1\n    while top <= bottom and left <= right:\n        # left → right\n        for i in range(left, right + 1):\n            res.append(matrix[top][i])",
+        "detail": "vishal.leet.54",
+        "documentation": {}
+    },
+    {
+        "label": "addBinary",
+        "kind": 2,
+        "importPath": "vishal.leet.67",
+        "description": "vishal.leet.67",
+        "peekOfCode": "def addBinary(a, b):  \n    x = int(a,2)\n    y = int(b,2)\n    while y:\n        carry = (x & y) << 1\n        x = x ^ y\n        y = carry\n    return bin(x)[2:]\nnum=\"11\"\nnum2=\"1\"",
+        "detail": "vishal.leet.67",
+        "documentation": {}
+    },
+    {
+        "label": "Solution",
+        "kind": 6,
+        "importPath": "vishal.leet.74",
+        "description": "vishal.leet.74",
+        "peekOfCode": "class Solution(object):\n    def searchMatrix(self, matrix, target):\n        if not matrix or not matrix[0]:\n            return False\n        m = len(matrix)\n        n = len(matrix[0])\n        left = 0\n        right = m * n - 1\n        while left <= right:\n            mid = (left + right) // 2",
+        "detail": "vishal.leet.74",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "vishal.py.DSA.Bit manipulation.addtion without +",
+        "description": "vishal.py.DSA.Bit manipulation.addtion without +",
+        "peekOfCode": "a = int(input(\"Enter first number: \"))\nb = int(input(\"Enter second number: \"))\ni = 1\nwhile b != 0:\n    print(\"Step :\", i, \"\\n\")\n    carry = a & b\n    print(\"carry:\", carry)\n    a = a ^ b\n    print(\"sum without carry:\", a)\n    b = carry << 1",
+        "detail": "vishal.py.DSA.Bit manipulation.addtion without +",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "vishal.py.DSA.Bit manipulation.addtion without +",
+        "description": "vishal.py.DSA.Bit manipulation.addtion without +",
+        "peekOfCode": "b = int(input(\"Enter second number: \"))\ni = 1\nwhile b != 0:\n    print(\"Step :\", i, \"\\n\")\n    carry = a & b\n    print(\"carry:\", carry)\n    a = a ^ b\n    print(\"sum without carry:\", a)\n    b = carry << 1\n    print(\"shifted carry:\", b)",
+        "detail": "vishal.py.DSA.Bit manipulation.addtion without +",
+        "documentation": {}
+    },
+    {
+        "label": "i",
+        "kind": 5,
+        "importPath": "vishal.py.DSA.Bit manipulation.addtion without +",
+        "description": "vishal.py.DSA.Bit manipulation.addtion without +",
+        "peekOfCode": "i = 1\nwhile b != 0:\n    print(\"Step :\", i, \"\\n\")\n    carry = a & b\n    print(\"carry:\", carry)\n    a = a ^ b\n    print(\"sum without carry:\", a)\n    b = carry << 1\n    print(\"shifted carry:\", b)\n    print()",
+        "detail": "vishal.py.DSA.Bit manipulation.addtion without +",
+        "documentation": {}
+    },
+    {
+        "label": "binary_search",
+        "kind": 2,
+        "importPath": "vishal.py.DSA.searching.binary search",
+        "description": "vishal.py.DSA.searching.binary search",
+        "peekOfCode": "def binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = left + (right - left) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1",
+        "detail": "vishal.py.DSA.searching.binary search",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "vishal.py.DSA.searching.binary search",
+        "description": "vishal.py.DSA.searching.binary search",
+        "peekOfCode": "n = input(\"input the sorted array: \")\nn = n.strip(\"[]\")\nn = list(map(int, n.split(\",\")))\ntarget = int(input(\"input the target: \"))\ndef binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = left + (right - left) // 2\n        if arr[mid] == target:\n            return mid",
+        "detail": "vishal.py.DSA.searching.binary search",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "vishal.py.DSA.searching.binary search",
+        "description": "vishal.py.DSA.searching.binary search",
+        "peekOfCode": "n = n.strip(\"[]\")\nn = list(map(int, n.split(\",\")))\ntarget = int(input(\"input the target: \"))\ndef binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = left + (right - left) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:",
+        "detail": "vishal.py.DSA.searching.binary search",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "vishal.py.DSA.searching.binary search",
+        "description": "vishal.py.DSA.searching.binary search",
+        "peekOfCode": "n = list(map(int, n.split(\",\")))\ntarget = int(input(\"input the target: \"))\ndef binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = left + (right - left) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1",
+        "detail": "vishal.py.DSA.searching.binary search",
+        "documentation": {}
+    },
+    {
+        "label": "target",
+        "kind": 5,
+        "importPath": "vishal.py.DSA.searching.binary search",
+        "description": "vishal.py.DSA.searching.binary search",
+        "peekOfCode": "target = int(input(\"input the target: \"))\ndef binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = left + (right - left) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:",
+        "detail": "vishal.py.DSA.searching.binary search",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "vishal.py.DSA.searching.binary search",
+        "description": "vishal.py.DSA.searching.binary search",
+        "peekOfCode": "result = binary_search(n, target)\nif result != -1:\n    print(f\"Target found at index: {result}\")\nelse:\n    print(\"Target not found in the array.\")",
+        "detail": "vishal.py.DSA.searching.binary search",
+        "documentation": {}
+    },
+    {
+        "label": "bubble_sort",
+        "kind": 2,
+        "importPath": "vishal.py.DSA.sorting.bubble",
+        "description": "vishal.py.DSA.sorting.bubble",
+        "peekOfCode": "def bubble_sort(arr):\n    n = len(arr)\n    for i in range(n - 1):\n        print(f\"\\nPass {i+1}:\")\n        for j in range(n - i - 1):\n            print(f\"  Compare {arr[j]} and {arr[j+1]}\", end=\" \")\n            if arr[j] > arr[j + 1]:\n                # Swap\n                arr[j], arr[j + 1] = arr[j + 1], arr[j]\n                print(\"→ swap\", arr)",
+        "detail": "vishal.py.DSA.sorting.bubble",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "vishal.py.DSA.sorting.bubble",
+        "description": "vishal.py.DSA.sorting.bubble",
+        "peekOfCode": "n = input(\"Input the unsorted array: \")\nn = n.strip(\"[]\")\nn = list(map(int, n.split(\",\")))\nbubble_sort(n)",
+        "detail": "vishal.py.DSA.sorting.bubble",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "vishal.py.DSA.sorting.bubble",
+        "description": "vishal.py.DSA.sorting.bubble",
+        "peekOfCode": "n = n.strip(\"[]\")\nn = list(map(int, n.split(\",\")))\nbubble_sort(n)",
+        "detail": "vishal.py.DSA.sorting.bubble",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "vishal.py.DSA.sorting.bubble",
+        "description": "vishal.py.DSA.sorting.bubble",
+        "peekOfCode": "n = list(map(int, n.split(\",\")))\nbubble_sort(n)",
+        "detail": "vishal.py.DSA.sorting.bubble",
+        "documentation": {}
+    },
+    {
+        "label": "insertion_sort",
+        "kind": 2,
+        "importPath": "vishal.py.DSA.sorting.insertion",
+        "description": "vishal.py.DSA.sorting.insertion",
+        "peekOfCode": "def insertion_sort(arr):\n    print(\"Initial array:\", arr)\n    for i in range(1, len(arr)):\n        key = arr[i]\n        j = i - 1\n        print(f\"\\nStep {i}: insert {key} into sorted left side {arr[:i]}\")\n        while j >= 0 and arr[j] > key:\n            arr[j + 1] = arr[j]\n            j -= 1\n            print(f\"  shift: {arr} (j={j})\")",
+        "detail": "vishal.py.DSA.sorting.insertion",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "vishal.py.DSA.sorting.insertion",
+        "description": "vishal.py.DSA.sorting.insertion",
+        "peekOfCode": "n = input(\"Input the unsorted array: \")\nn = n.strip(\"[]\")\nn = list(map(int, n.split(\",\")))\ndef insertion_sort(arr):\n    print(\"Initial array:\", arr)\n    for i in range(1, len(arr)):\n        key = arr[i]\n        j = i - 1\n        print(f\"\\nStep {i}: insert {key} into sorted left side {arr[:i]}\")\n        while j >= 0 and arr[j] > key:",
+        "detail": "vishal.py.DSA.sorting.insertion",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "vishal.py.DSA.sorting.insertion",
+        "description": "vishal.py.DSA.sorting.insertion",
+        "peekOfCode": "n = n.strip(\"[]\")\nn = list(map(int, n.split(\",\")))\ndef insertion_sort(arr):\n    print(\"Initial array:\", arr)\n    for i in range(1, len(arr)):\n        key = arr[i]\n        j = i - 1\n        print(f\"\\nStep {i}: insert {key} into sorted left side {arr[:i]}\")\n        while j >= 0 and arr[j] > key:\n            arr[j + 1] = arr[j]",
+        "detail": "vishal.py.DSA.sorting.insertion",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "vishal.py.DSA.sorting.insertion",
+        "description": "vishal.py.DSA.sorting.insertion",
+        "peekOfCode": "n = list(map(int, n.split(\",\")))\ndef insertion_sort(arr):\n    print(\"Initial array:\", arr)\n    for i in range(1, len(arr)):\n        key = arr[i]\n        j = i - 1\n        print(f\"\\nStep {i}: insert {key} into sorted left side {arr[:i]}\")\n        while j >= 0 and arr[j] > key:\n            arr[j + 1] = arr[j]\n            j -= 1",
+        "detail": "vishal.py.DSA.sorting.insertion",
+        "documentation": {}
+    },
+    {
+        "label": "sorted_arr",
+        "kind": 5,
+        "importPath": "vishal.py.DSA.sorting.insertion",
+        "description": "vishal.py.DSA.sorting.insertion",
+        "peekOfCode": "sorted_arr = insertion_sort(n)\nprint(\"\\nSorted array:\", sorted_arr)",
+        "detail": "vishal.py.DSA.sorting.insertion",
+        "documentation": {}
+    },
+    {
+        "label": "students",
+        "kind": 6,
+        "importPath": "vishal.py.oops.main",
+        "description": "vishal.py.oops.main",
+        "peekOfCode": "class students:\n    def __init__(self,name,age):\n        self.name=name\n        self.age=age\nclass stuclass12(students):\n    pass\nstudent1=stuclass12(\"vishal\",22)\nstudent2=stuclass12(\"lahsiv\",23)\nprint(student1.name)\nprint(student2.age)",
+        "detail": "vishal.py.oops.main",
+        "documentation": {}
+    },
+    {
+        "label": "stuclass12",
+        "kind": 6,
+        "importPath": "vishal.py.oops.main",
+        "description": "vishal.py.oops.main",
+        "peekOfCode": "class stuclass12(students):\n    pass\nstudent1=stuclass12(\"vishal\",22)\nstudent2=stuclass12(\"lahsiv\",23)\nprint(student1.name)\nprint(student2.age)",
+        "detail": "vishal.py.oops.main",
+        "documentation": {}
+    },
+    {
+        "label": "collatz",
+        "kind": 2,
+        "importPath": "vishal.py.Collatz Conjecture",
+        "description": "vishal.py.Collatz Conjecture",
+        "peekOfCode": "def collatz(n, steps=0):\n    if n == 1:\n        print(1)\n        return steps\n    print(n, end=\" → \")\n    if n % 2 == 0:\n        return collatz(n // 2, steps + 1)\n    else:\n        return collatz(3 * n + 1, steps + 1)\nnum = int(input(\"Enter a number: \"))",
+        "detail": "vishal.py.Collatz Conjecture",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "vishal.py.Collatz Conjecture",
+        "description": "vishal.py.Collatz Conjecture",
+        "peekOfCode": "num = int(input(\"Enter a number: \"))\nif num > 0:\n    total = collatz(num)\n    print(\"Total steps:\", total)\nelse:\n    print(\"Enter a positive number.\")",
+        "detail": "vishal.py.Collatz Conjecture",
+        "documentation": {}
+    },
+    {
+        "label": "kaprekar_routine",
+        "kind": 2,
+        "importPath": "vishal.py.Kaprekar's Constant visualizer",
+        "description": "vishal.py.Kaprekar's Constant visualizer",
+        "peekOfCode": "def kaprekar_routine(number):\n    step = 1\n    while number != 6174:\n        # Step 1: Convert number to a 4-digit string (pad with zeros if needed)\n        digits = str(number).zfill(4)\n        # Step 2: Arrange digits in descending and ascending order\n        descending = \"\".join(sorted(digits, reverse=True))\n        ascending = \"\".join(sorted(digits))\n        # Step 3: Subtract smaller from bigger\n        big = int(descending)",
+        "detail": "vishal.py.Kaprekar's Constant visualizer",
+        "documentation": {}
+    },
+    {
+        "label": "user_number",
+        "kind": 5,
+        "importPath": "vishal.py.Kaprekar's Constant visualizer",
+        "description": "vishal.py.Kaprekar's Constant visualizer",
+        "peekOfCode": "user_number = int(input(\"Enter a 4-digit number (not all same digits): \"))\n# Basic check: must be 4 digits and not all same digit\nif user_number < 1000 or user_number > 9999:\n    print(\"Please enter a valid 4-digit number.\")\nelif len(set(str(user_number).zfill(4))) == 1:\n    print(\"All digits are the same. Please try a different number.\")\nelse:\n    kaprekar_routine(user_number)",
+        "detail": "vishal.py.Kaprekar's Constant visualizer",
+        "documentation": {}
+    },
+    {
+        "label": "karatsuba",
+        "kind": 2,
+        "importPath": "vishal.py.multiplication_recurssive",
+        "description": "vishal.py.multiplication_recurssive",
+        "peekOfCode": "def karatsuba(x, y, space=\"\"):\n    print(space + f\"{x}X{y}\")\n    if x < 10 or y < 10:\n        return x * y\n    m = max(len(str(x)), len(str(y))) // 2\n    a, b = x // 10**m, x % 10**m\n    c, d = y // 10**m, y % 10**m\n    ac = karatsuba(a, c, space + \"  \")\n    bd = karatsuba(b, d, space + \"  \")\n    abcd = karatsuba(a + b, c + d, space + \"  \")",
+        "detail": "vishal.py.multiplication_recurssive",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "vishal.py.multiplication_recurssive",
+        "description": "vishal.py.multiplication_recurssive",
+        "peekOfCode": "result = karatsuba(1234, 5678)\nprint(\"Final Answer:\", result)",
+        "detail": "vishal.py.multiplication_recurssive",
+        "documentation": {}
+    },
+    {
+        "label": "sieve",
+        "kind": 2,
+        "importPath": "vishal.py.Sieve of Eratosthenes",
+        "description": "vishal.py.Sieve of Eratosthenes",
+        "peekOfCode": "def sieve(n):\n    prime = [True] * (n + 1)\n    prime[0] = prime[1] = False\n    for i in range(2, int(n**0.5) + 1):\n        if prime[i]:\n            for j in range(i*i, n+1, i):\n                prime[j] = False\n    return [i for i in range(n+1) if prime[i]]\nprint(sieve(10))",
+        "detail": "vishal.py.Sieve of Eratosthenes",
+        "documentation": {}
+    }
+]
