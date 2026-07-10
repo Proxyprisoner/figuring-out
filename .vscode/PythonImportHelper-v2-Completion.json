@@ -36,6 +36,24 @@
         "documentation": {}
     },
     {
+        "label": "findLucky",
+        "kind": 2,
+        "importPath": "vishal.leet.1394",
+        "description": "vishal.leet.1394",
+        "peekOfCode": "def findLucky(arr):\n    from collections import Counter\n    freq = Counter(arr)\n    lucky = -1\n    for num, count in freq.items():\n            if num == count:\n                lucky = max(lucky, num)\n    return lucky\ndef findLucky(arr):\n        count = {}",
+        "detail": "vishal.leet.1394",
+        "documentation": {}
+    },
+    {
+        "label": "findLucky",
+        "kind": 2,
+        "importPath": "vishal.leet.1394",
+        "description": "vishal.leet.1394",
+        "peekOfCode": "def findLucky(arr):\n        count = {}\n        for num in arr:\n            if num in count:\n                count[num] += 1\n            else:\n                count[num] = 1\n        lucky = -1\n        for num in count:\n            if num == count[num] and num > lucky:",
+        "detail": "vishal.leet.1394",
+        "documentation": {}
+    },
+    {
         "label": "Solution",
         "kind": 6,
         "importPath": "vishal.leet.168",
