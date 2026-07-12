@@ -144,6 +144,15 @@
         "documentation": {}
     },
     {
+        "label": "isPalindrome",
+        "kind": 2,
+        "importPath": "vishal.leet.9",
+        "description": "vishal.leet.9",
+        "peekOfCode": "def isPalindrome(x):\n        if x < 0:\n            return False\n        s = str(x)\n        return s == s[::-1]\nx= int(input(\"Enter a number: \"))\nprint(isPalindrome(x))",
+        "detail": "vishal.leet.9",
+        "documentation": {}
+    },
+    {
         "label": "a",
         "kind": 5,
         "importPath": "vishal.py.DSA.Bit manipulation.addtion without +",
