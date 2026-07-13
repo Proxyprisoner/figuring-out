@@ -18,6 +18,24 @@
         "documentation": {}
     },
     {
+        "label": "arrayRankTransform",
+        "kind": 2,
+        "importPath": "vishal.leet.1331",
+        "description": "vishal.leet.1331",
+        "peekOfCode": "def arrayRankTransform(arr):\n        sorted_arr = sorted(arr)\n        rank = {}\n        current_rank = 1\n        for num in sorted_arr:\n            if num not in rank:\n                rank[num] = current_rank\n                current_rank += 1\n        return [rank[num] for num in arr]\narr = [40, 10, 20, 30]",
+        "detail": "vishal.leet.1331",
+        "documentation": {}
+    },
+    {
+        "label": "arr",
+        "kind": 5,
+        "importPath": "vishal.leet.1331",
+        "description": "vishal.leet.1331",
+        "peekOfCode": "arr = [40, 10, 20, 30]\nprint(arrayRankTransform(arr))",
+        "detail": "vishal.leet.1331",
+        "documentation": {}
+    },
+    {
         "label": "numberOfSteps",
         "kind": 2,
         "importPath": "vishal.leet.1342",
