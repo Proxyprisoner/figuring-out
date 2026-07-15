@@ -396,6 +396,42 @@
         "documentation": {}
     },
     {
+        "label": "create_palindrome",
+        "kind": 2,
+        "importPath": "vishal.py.Create_Palindrome",
+        "description": "vishal.py.Create_Palindrome",
+        "peekOfCode": "def create_palindrome(num):\n    for i in range(50):\n        if num == int(str(num)[::-1]):\n            return num\n        num = num + int(str(num)[::-1])\n    return \"Possible Lychrel number\"\ndef Lychamp_numbers(num):\n    return create_palindrome(num)\nnum = int(input(\"Enter a number: \"))\nresult = Lychamp_numbers(num)",
+        "detail": "vishal.py.Create_Palindrome",
+        "documentation": {}
+    },
+    {
+        "label": "Lychamp_numbers",
+        "kind": 2,
+        "importPath": "vishal.py.Create_Palindrome",
+        "description": "vishal.py.Create_Palindrome",
+        "peekOfCode": "def Lychamp_numbers(num):\n    return create_palindrome(num)\nnum = int(input(\"Enter a number: \"))\nresult = Lychamp_numbers(num)\nprint(\"The palindrome is:\", result)",
+        "detail": "vishal.py.Create_Palindrome",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "vishal.py.Create_Palindrome",
+        "description": "vishal.py.Create_Palindrome",
+        "peekOfCode": "num = int(input(\"Enter a number: \"))\nresult = Lychamp_numbers(num)\nprint(\"The palindrome is:\", result)",
+        "detail": "vishal.py.Create_Palindrome",
+        "documentation": {}
+    },
+    {
+        "label": "result",
+        "kind": 5,
+        "importPath": "vishal.py.Create_Palindrome",
+        "description": "vishal.py.Create_Palindrome",
+        "peekOfCode": "result = Lychamp_numbers(num)\nprint(\"The palindrome is:\", result)",
+        "detail": "vishal.py.Create_Palindrome",
+        "documentation": {}
+    },
+    {
         "label": "kaprekar_routine",
         "kind": 2,
         "importPath": "vishal.py.Kaprekar's Constant visualizer",
