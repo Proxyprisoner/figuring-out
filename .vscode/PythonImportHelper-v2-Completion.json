@@ -99,6 +99,24 @@
         "documentation": {}
     },
     {
+        "label": "hammingWeight",
+        "kind": 2,
+        "importPath": "vishal.leet.191",
+        "description": "vishal.leet.191",
+        "peekOfCode": "def hammingWeight(n):\n    count = 0\n    while n != 0:\n        if n & 1:\n            count += 1\n        n = n >> 1\n    return count\nn = int(input(\"Enter a decimal number: \"))\nprint(\"Binary:\", bin(n)[2:])\nprint(\"Number of 1s:\", hammingWeight(n))",
+        "detail": "vishal.leet.191",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "vishal.leet.191",
+        "description": "vishal.leet.191",
+        "peekOfCode": "n = int(input(\"Enter a decimal number: \"))\nprint(\"Binary:\", bin(n)[2:])\nprint(\"Number of 1s:\", hammingWeight(n))",
+        "detail": "vishal.leet.191",
+        "documentation": {}
+    },
+    {
         "label": "containsDuplicate",
         "kind": 2,
         "importPath": "vishal.leet.217",
