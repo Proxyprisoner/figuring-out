@@ -144,6 +144,15 @@
         "documentation": {}
     },
     {
+        "label": "missingNumber",
+        "kind": 2,
+        "importPath": "vishal.leet.268",
+        "description": "vishal.leet.268",
+        "peekOfCode": "def missingNumber(nums):\n        n = len(nums)\n        return n * (n + 1) // 2 - sum(nums)\nnumb=[3,0,1]\nprint(missingNumber(numb))",
+        "detail": "vishal.leet.268",
+        "documentation": {}
+    },
+    {
         "label": "searchInsert",
         "kind": 2,
         "importPath": "vishal.leet.35",
