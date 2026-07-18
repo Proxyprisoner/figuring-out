@@ -45,6 +45,15 @@
         "documentation": {}
     },
     {
+        "label": "angleClock",
+        "kind": 2,
+        "importPath": "vishal.leet.1344",
+        "description": "vishal.leet.1344",
+        "peekOfCode": "def angleClock(hour, minutes):\n        ma=minutes*6\n        ha=(hour%12)*30+minutes*(0.5)\n        ang=abs(ha-ma)\n        return min(ang,360-ang)\nhour=int(input(\"Enter hour: \"))\nminutes=int(input(\"Enter minutes: \"))\nprint(angleClock(hour,minutes))",
+        "detail": "vishal.leet.1344",
+        "documentation": {}
+    },
+    {
         "label": "singleNumber",
         "kind": 2,
         "importPath": "vishal.leet.136",
