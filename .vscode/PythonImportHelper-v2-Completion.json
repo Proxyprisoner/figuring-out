@@ -198,6 +198,24 @@
         "documentation": {}
     },
     {
+        "label": "rotate",
+        "kind": 2,
+        "importPath": "vishal.leet.48",
+        "description": "vishal.leet.48",
+        "peekOfCode": "def rotate(matrix):\n        row = len(matrix)\n        col = len(matrix[0])\n        for i in range(row):\n            for j in range(i + 1, col):\n                matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j]\n        for k in range(row):\n            matrix[k].reverse()\nmatrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nprint(\"Original matrix:\")",
+        "detail": "vishal.leet.48",
+        "documentation": {}
+    },
+    {
+        "label": "matrix",
+        "kind": 5,
+        "importPath": "vishal.leet.48",
+        "description": "vishal.leet.48",
+        "peekOfCode": "matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]\nprint(\"Original matrix:\")\nfor row in matrix:\n    print(row)\nrotate(matrix)\nprint(\"Matrix after 90-degree clockwise rotation:\")\nfor row in matrix:\n    print(row)",
+        "detail": "vishal.leet.48",
+        "documentation": {}
+    },
+    {
         "label": "spiralOrder",
         "kind": 2,
         "importPath": "vishal.leet.54",
