@@ -189,6 +189,33 @@
         "documentation": {}
     },
     {
+        "label": "intersection",
+        "kind": 2,
+        "importPath": "vishal.leet.349",
+        "description": "vishal.leet.349",
+        "peekOfCode": "def intersection(nums1, nums2):\n        return list(set(nums1) & set(nums2))\nnums1 = [4,9,5]\nnums2 = [9,4,9,8,4] \nprint(intersection(nums1, nums2))",
+        "detail": "vishal.leet.349",
+        "documentation": {}
+    },
+    {
+        "label": "nums1",
+        "kind": 5,
+        "importPath": "vishal.leet.349",
+        "description": "vishal.leet.349",
+        "peekOfCode": "nums1 = [4,9,5]\nnums2 = [9,4,9,8,4] \nprint(intersection(nums1, nums2))",
+        "detail": "vishal.leet.349",
+        "documentation": {}
+    },
+    {
+        "label": "nums2",
+        "kind": 5,
+        "importPath": "vishal.leet.349",
+        "description": "vishal.leet.349",
+        "peekOfCode": "nums2 = [9,4,9,8,4] \nprint(intersection(nums1, nums2))",
+        "detail": "vishal.leet.349",
+        "documentation": {}
+    },
+    {
         "label": "searchInsert",
         "kind": 2,
         "importPath": "vishal.leet.35",
