@@ -252,6 +252,15 @@
         "documentation": {}
     },
     {
+        "label": "findTheDifference",
+        "kind": 2,
+        "importPath": "vishal.leet.389",
+        "description": "vishal.leet.389",
+        "peekOfCode": "def findTheDifference(s,t):\n        res = 0\n        # XOR all characters in s and t\n        for char in s + t:\n            res ^= ord(char)\n        # Convert the XOR result back to character\n        return chr(res)\ns=\"abcd\"\nt=\"abcde\"   \nprint(findTheDifference(s,t))",
+        "detail": "vishal.leet.389",
+        "documentation": {}
+    },
+    {
         "label": "rotate",
         "kind": 2,
         "importPath": "vishal.leet.48",
