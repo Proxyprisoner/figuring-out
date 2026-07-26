@@ -243,6 +243,15 @@
         "documentation": {}
     },
     {
+        "label": "maxProduct",
+        "kind": 2,
+        "importPath": "vishal.leet.3536",
+        "description": "vishal.leet.3536",
+        "peekOfCode": "def maxProduct(n):\n        max1 = max2 = 0\n        while n:\n            d = n % 10\n            if d >= max1:\n                max2 = max1\n                max1 = d\n            elif d > max2:\n                max2 = d\n            n //= 10",
+        "detail": "vishal.leet.3536",
+        "documentation": {}
+    },
+    {
         "label": "getSum",
         "kind": 2,
         "importPath": "vishal.leet.371",
