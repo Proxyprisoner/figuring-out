@@ -1,3 +1,4 @@
+#run in terminal: python "vishal/py/narcissistic.py"
 def is_narcissistic(num):
     digits = str(num)
     power = len(digits)

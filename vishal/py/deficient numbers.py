@@ -1,3 +1,4 @@
+#run in terminal: python "vishal/py/deficient numbers.py"
 def is_deficient(n):
     if n == 1:
         return True
