@@ -153,6 +153,24 @@
         "documentation": {}
     },
     {
+        "label": "removeDuplicates",
+        "kind": 2,
+        "importPath": "vishal.leet.26",
+        "description": "vishal.leet.26",
+        "peekOfCode": "def removeDuplicates(self, nums):\n        if not nums:\n            return 0\n        k = 1\n        for i in range(1, len(nums)):\n            if nums[i] != nums[i-1]:\n                nums[k] = nums[i]\n                k += 1\n        return k\nnums = [1, 1, 2]",
+        "detail": "vishal.leet.26",
+        "documentation": {}
+    },
+    {
+        "label": "nums",
+        "kind": 5,
+        "importPath": "vishal.leet.26",
+        "description": "vishal.leet.26",
+        "peekOfCode": "nums = [1, 1, 2]\nprint(removeDuplicates(None, nums))  # Output: 2",
+        "detail": "vishal.leet.26",
+        "documentation": {}
+    },
+    {
         "label": "missingNumber",
         "kind": 2,
         "importPath": "vishal.leet.268",
