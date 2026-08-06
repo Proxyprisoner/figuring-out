@@ -9,11 +9,20 @@
         "documentation": {}
     },
     {
-        "label": "Solution",
-        "kind": 6,
+        "label": "dayOfYear",
+        "kind": 2,
         "importPath": "vishal.leet.1154",
         "description": "vishal.leet.1154",
-        "peekOfCode": "class Solution(object):\n    def dayOfYear(self, date):\n        year, month, day = map(int, date.split('-'))\n        days = [31,28,31,30,31,30,31,31,30,31,30,31]\n        if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):\n            days[1] = 29\n        total = sum(days[:month-1]) + day\n        return total",
+        "peekOfCode": "def dayOfYear(date):\n    year, month, day = map(int, date.split('-'))\n    days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]\n    if (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0):\n        days[1] = 29\n    total = sum(days[:month-1]) + day\n    return total\ndate = \"2019-01-09\"\nprint(dayOfYear(date))  # Output: 9",
+        "detail": "vishal.leet.1154",
+        "documentation": {}
+    },
+    {
+        "label": "date",
+        "kind": 5,
+        "importPath": "vishal.leet.1154",
+        "description": "vishal.leet.1154",
+        "peekOfCode": "date = \"2019-01-09\"\nprint(dayOfYear(date))  # Output: 9",
         "detail": "vishal.leet.1154",
         "documentation": {}
     },
@@ -45,11 +54,38 @@
         "documentation": {}
     },
     {
+        "label": "num",
+        "kind": 5,
+        "importPath": "vishal.leet.1342",
+        "description": "vishal.leet.1342",
+        "peekOfCode": "num = 14\nprint(numberOfSteps(num))  # Output: 6",
+        "detail": "vishal.leet.1342",
+        "documentation": {}
+    },
+    {
         "label": "angleClock",
         "kind": 2,
         "importPath": "vishal.leet.1344",
         "description": "vishal.leet.1344",
-        "peekOfCode": "def angleClock(hour, minutes):\n        ma=minutes*6\n        ha=(hour%12)*30+minutes*(0.5)\n        ang=abs(ha-ma)\n        return min(ang,360-ang)\nhour=int(input(\"Enter hour: \"))\nminutes=int(input(\"Enter minutes: \"))\nprint(angleClock(hour,minutes))",
+        "peekOfCode": "def angleClock(hour, minutes):\n        ma=minutes*6\n        ha=(hour%12)*30+minutes*(0.5)\n        ang=abs(ha-ma)\n        return min(ang,360-ang)\nhour = 12\nminutes = 30\nprint(angleClock(hour, minutes))  # Output: 165.0",
+        "detail": "vishal.leet.1344",
+        "documentation": {}
+    },
+    {
+        "label": "hour",
+        "kind": 5,
+        "importPath": "vishal.leet.1344",
+        "description": "vishal.leet.1344",
+        "peekOfCode": "hour = 12\nminutes = 30\nprint(angleClock(hour, minutes))  # Output: 165.0",
+        "detail": "vishal.leet.1344",
+        "documentation": {}
+    },
+    {
+        "label": "minutes",
+        "kind": 5,
+        "importPath": "vishal.leet.1344",
+        "description": "vishal.leet.1344",
+        "peekOfCode": "minutes = 30\nprint(angleClock(hour, minutes))  # Output: 165.0",
         "detail": "vishal.leet.1344",
         "documentation": {}
     },
@@ -90,29 +126,56 @@
         "documentation": {}
     },
     {
-        "label": "Solution",
-        "kind": 6,
+        "label": "convertToTitle",
+        "kind": 2,
         "importPath": "vishal.leet.168",
         "description": "vishal.leet.168",
-        "peekOfCode": "class Solution:\n    def convertToTitle(self, columnNumber):\n        res = \"\"\n        while columnNumber > 0:\n            columnNumber -= 1\n            res = chr((columnNumber % 26) + ord(\"A\")) + res\n            columnNumber //= 26\n        return res",
+        "peekOfCode": "def convertToTitle(columnNumber):\n    res = \"\"\n    while columnNumber > 0:\n        columnNumber -= 1\n        res = chr((columnNumber % 26) + ord(\"A\")) + res\n        columnNumber //= 26\n    return res\ncolumnNumber = 28\nprint(convertToTitle(columnNumber))  # Output: AB",
         "detail": "vishal.leet.168",
         "documentation": {}
     },
     {
-        "label": "Solution",
-        "kind": 6,
+        "label": "columnNumber",
+        "kind": 5,
+        "importPath": "vishal.leet.168",
+        "description": "vishal.leet.168",
+        "peekOfCode": "columnNumber = 28\nprint(convertToTitle(columnNumber))  # Output: AB",
+        "detail": "vishal.leet.168",
+        "documentation": {}
+    },
+    {
+        "label": "titleToNumber",
+        "kind": 2,
         "importPath": "vishal.leet.171",
         "description": "vishal.leet.171",
-        "peekOfCode": "class Solution(object):\n    def titleToNumber(self, columnTitle):\n        res = 0\n        for ch in columnTitle:\n            res=res*26+(ord(ch)-ord('A')+1)\n        return res",
+        "peekOfCode": "def titleToNumber(columnTitle):\n    res = 0\n    for ch in columnTitle:\n        res = res * 26 + (ord(ch) - ord('A') + 1)\n    return res\ncolumnTitle = \"AB\"\nprint(titleToNumber(columnTitle))  # Output: 28",
         "detail": "vishal.leet.171",
         "documentation": {}
     },
     {
-        "label": "Solution",
-        "kind": 6,
+        "label": "columnTitle",
+        "kind": 5,
+        "importPath": "vishal.leet.171",
+        "description": "vishal.leet.171",
+        "peekOfCode": "columnTitle = \"AB\"\nprint(titleToNumber(columnTitle))  # Output: 28",
+        "detail": "vishal.leet.171",
+        "documentation": {}
+    },
+    {
+        "label": "trailingZeroes",
+        "kind": 2,
         "importPath": "vishal.leet.172",
         "description": "vishal.leet.172",
-        "peekOfCode": "class Solution(object):\n    def trailingZeroes(self, n):\n        count=0\n        while(n>0):\n            n//=5\n            count+=n\n        return count",
+        "peekOfCode": "def trailingZeroes(n):\n    count = 0\n    while n > 0:\n        n //= 5\n        count += n\n    return count\nn = 5\nprint(trailingZeroes(n))  # Output: 1",
+        "detail": "vishal.leet.172",
+        "documentation": {}
+    },
+    {
+        "label": "n",
+        "kind": 5,
+        "importPath": "vishal.leet.172",
+        "description": "vishal.leet.172",
+        "peekOfCode": "n = 5\nprint(trailingZeroes(n))  # Output: 1",
         "detail": "vishal.leet.172",
         "documentation": {}
     },
@@ -121,7 +184,7 @@
         "kind": 2,
         "importPath": "vishal.leet.191",
         "description": "vishal.leet.191",
-        "peekOfCode": "def hammingWeight(n):\n    count = 0\n    while n != 0:\n        if n & 1:\n            count += 1\n        n = n >> 1\n    return count\nn = int(input(\"Enter a decimal number: \"))\nprint(\"Binary:\", bin(n)[2:])\nprint(\"Number of 1s:\", hammingWeight(n))",
+        "peekOfCode": "def hammingWeight(n):\n    count = 0\n    while n != 0:\n        if n & 1:\n            count += 1\n        n = n >> 1\n    return count\nn = 11\nprint(\"Binary:\", bin(n)[2:])\nprint(\"Number of 1s:\", hammingWeight(n))",
         "detail": "vishal.leet.191",
         "documentation": {}
     },
@@ -130,7 +193,7 @@
         "kind": 5,
         "importPath": "vishal.leet.191",
         "description": "vishal.leet.191",
-        "peekOfCode": "n = int(input(\"Enter a decimal number: \"))\nprint(\"Binary:\", bin(n)[2:])\nprint(\"Number of 1s:\", hammingWeight(n))",
+        "peekOfCode": "n = 11\nprint(\"Binary:\", bin(n)[2:])\nprint(\"Number of 1s:\", hammingWeight(n))",
         "detail": "vishal.leet.191",
         "documentation": {}
     },
@@ -139,7 +202,7 @@
         "kind": 2,
         "importPath": "vishal.leet.217",
         "description": "vishal.leet.217",
-        "peekOfCode": "def containsDuplicate(self, nums):\n        seen = set()\n        for num in nums:\n            if num in seen:\n                return True\n            seen.add(num)\n        return False\ndef containsDuplicate2(self, nums):\n        temp = set(nums)\n        if len(temp) != len(nums):",
+        "peekOfCode": "def containsDuplicate(nums):\n        seen = set()\n        for num in nums:\n            if num in seen:\n                return True\n            seen.add(num)\n        return False\ndef containsDuplicate2(nums):\n        temp = set(nums)\n        if len(temp) != len(nums):",
         "detail": "vishal.leet.217",
         "documentation": {}
     },
@@ -148,7 +211,7 @@
         "kind": 2,
         "importPath": "vishal.leet.217",
         "description": "vishal.leet.217",
-        "peekOfCode": "def containsDuplicate2(self, nums):\n        temp = set(nums)\n        if len(temp) != len(nums):\n            return True \n        return False       \ndef containsDuplicate3(self, nums):\n        dup=[]\n        org=[]\n        seen=[]\n        for i in nums:",
+        "peekOfCode": "def containsDuplicate2(nums):\n        temp = set(nums)\n        if len(temp) != len(nums):\n            return True \n        return False       \ndef containsDuplicate3(nums):\n        dup=[]\n        org=[]\n        seen=[]\n        for i in nums:",
         "detail": "vishal.leet.217",
         "documentation": {}
     },
@@ -157,7 +220,7 @@
         "kind": 2,
         "importPath": "vishal.leet.217",
         "description": "vishal.leet.217",
-        "peekOfCode": "def containsDuplicate3(self, nums):\n        dup=[]\n        org=[]\n        seen=[]\n        for i in nums:\n            if i not in dup:\n                dup.append(i)\n            else:\n                seen.append(i)\n        if seen:",
+        "peekOfCode": "def containsDuplicate3(nums):\n        dup=[]\n        org=[]\n        seen=[]\n        for i in nums:\n            if i not in dup:\n                dup.append(i)\n            else:\n                seen.append(i)\n        if seen:",
         "detail": "vishal.leet.217",
         "documentation": {}
     },
@@ -166,7 +229,7 @@
         "kind": 2,
         "importPath": "vishal.leet.26",
         "description": "vishal.leet.26",
-        "peekOfCode": "def removeDuplicates(self, nums):\n        if not nums:\n            return 0\n        k = 1\n        for i in range(1, len(nums)):\n            if nums[i] != nums[i-1]:\n                nums[k] = nums[i]\n                k += 1\n        return k\nnums = [1, 1, 2]",
+        "peekOfCode": "def removeDuplicates(nums):\n        if not nums:\n            return 0\n        k = 1\n        for i in range(1, len(nums)):\n            if nums[i] != nums[i-1]:\n                nums[k] = nums[i]\n                k += 1\n        return k\nnums = [1, 1, 2]",
         "detail": "vishal.leet.26",
         "documentation": {}
     },
@@ -175,7 +238,7 @@
         "kind": 5,
         "importPath": "vishal.leet.26",
         "description": "vishal.leet.26",
-        "peekOfCode": "nums = [1, 1, 2]\nprint(removeDuplicates(None, nums))  # Output: 2",
+        "peekOfCode": "nums = [1, 1, 2]\nprint(removeDuplicates(nums))  # Output: 2",
         "detail": "vishal.leet.26",
         "documentation": {}
     },
@@ -283,7 +346,25 @@
         "kind": 2,
         "importPath": "vishal.leet.371",
         "description": "vishal.leet.371",
-        "peekOfCode": "def getSum(a, b):\n        while b:\n            carry=(a&b)<<1\n            a=(a^b)& 0xffffffff\n            b=carry& 0xffffffff\n        return a if a <=  0x7fffffff else ~(a ^  0xffffffff)\na=int(input(\"Enter first number: \"))\nb=int(input(\"Enter second number: \"))   \nprint(getSum(a,b))",
+        "peekOfCode": "def getSum(a, b):\n        while b:\n            carry=(a&b)<<1\n            a=(a^b)& 0xffffffff\n            b=carry& 0xffffffff\n        return a if a <=  0x7fffffff else ~(a ^  0xffffffff)\na = 1\nb = 2\nprint(getSum(a, b))  # Output: 3",
+        "detail": "vishal.leet.371",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "vishal.leet.371",
+        "description": "vishal.leet.371",
+        "peekOfCode": "a = 1\nb = 2\nprint(getSum(a, b))  # Output: 3",
+        "detail": "vishal.leet.371",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "vishal.leet.371",
+        "description": "vishal.leet.371",
+        "peekOfCode": "b = 2\nprint(getSum(a, b))  # Output: 3",
         "detail": "vishal.leet.371",
         "documentation": {}
     },
@@ -342,11 +423,29 @@
         "documentation": {}
     },
     {
-        "label": "Solution",
-        "kind": 6,
+        "label": "searchMatrix",
+        "kind": 2,
         "importPath": "vishal.leet.74",
         "description": "vishal.leet.74",
-        "peekOfCode": "class Solution(object):\n    def searchMatrix(self, matrix, target):\n        if not matrix or not matrix[0]:\n            return False\n        m = len(matrix)\n        n = len(matrix[0])\n        left = 0\n        right = m * n - 1\n        while left <= right:\n            mid = (left + right) // 2",
+        "peekOfCode": "def searchMatrix(matrix, target):\n    if not matrix or not matrix[0]:\n        return False\n    m = len(matrix)\n    n = len(matrix[0])\n    left = 0\n    right = m * n - 1\n    while left <= right:\n        mid = (left + right) // 2\n        row = mid // n",
+        "detail": "vishal.leet.74",
+        "documentation": {}
+    },
+    {
+        "label": "matrix",
+        "kind": 5,
+        "importPath": "vishal.leet.74",
+        "description": "vishal.leet.74",
+        "peekOfCode": "matrix = [\n    [1, 3, 5, 7],\n    [10, 11, 16, 20],\n    [23, 30, 34, 60],\n]\ntarget = 3\nprint(searchMatrix(matrix, target))  # Output: True",
+        "detail": "vishal.leet.74",
+        "documentation": {}
+    },
+    {
+        "label": "target",
+        "kind": 5,
+        "importPath": "vishal.leet.74",
+        "description": "vishal.leet.74",
+        "peekOfCode": "target = 3\nprint(searchMatrix(matrix, target))  # Output: True",
         "detail": "vishal.leet.74",
         "documentation": {}
     },
@@ -364,7 +463,16 @@
         "kind": 2,
         "importPath": "vishal.leet.9",
         "description": "vishal.leet.9",
-        "peekOfCode": "def isPalindrome(x):\n        if x < 0:\n            return False\n        s = str(x)\n        return s == s[::-1]\nx= int(input(\"Enter a number: \"))\nprint(isPalindrome(x))",
+        "peekOfCode": "def isPalindrome(x):\n        if x < 0:\n            return False\n        s = str(x)\n        return s == s[::-1]\nx = 121\nprint(isPalindrome(x))",
+        "detail": "vishal.leet.9",
+        "documentation": {}
+    },
+    {
+        "label": "x",
+        "kind": 5,
+        "importPath": "vishal.leet.9",
+        "description": "vishal.leet.9",
+        "peekOfCode": "x = 121\nprint(isPalindrome(x))",
         "detail": "vishal.leet.9",
         "documentation": {}
     },

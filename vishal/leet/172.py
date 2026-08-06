@@ -3,10 +3,13 @@
 This is because every pair of 2 and 5 contributes to a trailing zero, and there are usually more factors of 2 than 5 in a factorial.
  Therefore, counting the number of factors of 5 gives us the number of trailing zeroes."""    
 
-class Solution(object):
-    def trailingZeroes(self, n):
-        count=0
-        while(n>0):
-            n//=5
-            count+=n
-        return count
+def trailingZeroes(n):
+    count = 0
+    while n > 0:
+        n //= 5
+        count += n
+    return count
+
+
+n = 5
+print(trailingZeroes(n))  # Output: 1

@@ -4,5 +4,5 @@ def isPalindrome(x):
             return False
         s = str(x)
         return s == s[::-1]
-x= int(input("Enter a number: "))
+x = 121
 print(isPalindrome(x))

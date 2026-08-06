@@ -5,6 +5,6 @@ def getSum(a, b):
             a=(a^b)& 0xffffffff
             b=carry& 0xffffffff
         return a if a <=  0x7fffffff else ~(a ^  0xffffffff)
-a=int(input("Enter first number: "))
-b=int(input("Enter second number: "))   
-print(getSum(a,b))
+a = 1
+b = 2
+print(getSum(a, b))  # Output: 3

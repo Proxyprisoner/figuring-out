@@ -6,7 +6,7 @@ def hammingWeight(n):
         n = n >> 1
     return count
 
-n = int(input("Enter a decimal number: "))
+n = 11
 
 print("Binary:", bin(n)[2:])
 print("Number of 1s:", hammingWeight(n))

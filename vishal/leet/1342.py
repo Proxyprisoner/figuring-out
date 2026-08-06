@@ -9,5 +9,5 @@ def numberOfSteps(num):
                 num-=1
                 step+=1
         return step
-num=int(input("Enter a number: "))
-print(numberOfSteps(num))
+num = 14
+print(numberOfSteps(num))  # Output: 6

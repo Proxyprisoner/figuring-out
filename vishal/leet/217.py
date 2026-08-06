@@ -1,5 +1,5 @@
 #Run in terminal: python "vishal/leet/217.py"
-def containsDuplicate(self, nums):
+def containsDuplicate(nums):
         seen = set()
         for num in nums:
             if num in seen:
@@ -7,14 +7,14 @@ def containsDuplicate(self, nums):
             seen.add(num)
         return False
     
-def containsDuplicate2(self, nums):
+def containsDuplicate2(nums):
         
         temp = set(nums)
         if len(temp) != len(nums):
             return True 
         return False       
     
-def containsDuplicate3(self, nums):
+def containsDuplicate3(nums):
         dup=[]
         org=[]
         seen=[]

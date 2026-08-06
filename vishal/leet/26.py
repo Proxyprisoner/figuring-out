@@ -1,5 +1,5 @@
 #run in terminal: python "vishal/leet/26.py"
-def removeDuplicates(self, nums):
+def removeDuplicates(nums):
         if not nums:
             return 0
 
@@ -11,4 +11,4 @@ def removeDuplicates(self, nums):
 
         return k
 nums = [1, 1, 2]
-print(removeDuplicates(None, nums))  # Output: 2
+print(removeDuplicates(nums))  # Output: 2
