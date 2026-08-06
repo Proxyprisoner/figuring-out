@@ -81,6 +81,15 @@
         "documentation": {}
     },
     {
+        "label": "compareVersion",
+        "kind": 2,
+        "importPath": "vishal.leet.165",
+        "description": "vishal.leet.165",
+        "peekOfCode": "def compareVersion(version1, version2):\n        v1 = list(map(int, version1.split('.')))\n        v2 = list(map(int, version2.split('.')))\n        n = max(len(v1), len(v2))\n        for i in range(n):\n            num1 = v1[i] if i < len(v1) else 0\n            num2 = v2[i] if i < len(v2) else 0\n            if num1 < num2:\n                return -1\n            if num1 > num2:",
+        "detail": "vishal.leet.165",
+        "documentation": {}
+    },
+    {
         "label": "Solution",
         "kind": 6,
         "importPath": "vishal.leet.168",
@@ -339,6 +348,15 @@
         "description": "vishal.leet.74",
         "peekOfCode": "class Solution(object):\n    def searchMatrix(self, matrix, target):\n        if not matrix or not matrix[0]:\n            return False\n        m = len(matrix)\n        n = len(matrix[0])\n        left = 0\n        right = m * n - 1\n        while left <= right:\n            mid = (left + right) // 2",
         "detail": "vishal.leet.74",
+        "documentation": {}
+    },
+    {
+        "label": "nextGreatestLetter",
+        "kind": 2,
+        "importPath": "vishal.leet.744",
+        "description": "vishal.leet.744",
+        "peekOfCode": "def nextGreatestLetter(letters, target):\n        low, high = 0, len(letters) - 1\n        ans = letters[0]   # default for wrap-around\n        while low <= high:\n            mid = (low + high) // 2\n            if letters[mid] > target:\n                ans = letters[mid]   \n                high = mid - 1       \n            else:\n                low = mid + 1",
+        "detail": "vishal.leet.744",
         "documentation": {}
     },
     {

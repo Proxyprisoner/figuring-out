@@ -1,3 +1,4 @@
+# Run in terminal: python "vishal/leet/165.py"
 def compareVersion(version1, version2):
         v1 = list(map(int, version1.split('.')))
         v2 = list(map(int, version2.split('.')))
