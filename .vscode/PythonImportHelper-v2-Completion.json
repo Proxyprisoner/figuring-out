@@ -414,6 +414,24 @@
         "documentation": {}
     },
     {
+        "label": "plusOne",
+        "kind": 2,
+        "importPath": "vishal.leet.66",
+        "description": "vishal.leet.66",
+        "peekOfCode": "def plusOne(digits):\n        num = 0\n        for digit in digits:\n            num = num * 10 + digit\n        num += 1\n        digits = list(map(int, str(num)))\n        return digits\ndigits = [1, 2, 3]\nprint(plusOne(digits))  # Output: [1, 2, 4]",
+        "detail": "vishal.leet.66",
+        "documentation": {}
+    },
+    {
+        "label": "digits",
+        "kind": 5,
+        "importPath": "vishal.leet.66",
+        "description": "vishal.leet.66",
+        "peekOfCode": "digits = [1, 2, 3]\nprint(plusOne(digits))  # Output: [1, 2, 4]",
+        "detail": "vishal.leet.66",
+        "documentation": {}
+    },
+    {
         "label": "addBinary",
         "kind": 2,
         "importPath": "vishal.leet.67",
