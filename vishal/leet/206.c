@@ -1,3 +1,4 @@
+/* run in terminal: gcc 206.c -o 206 && ./206 */
 #include<stdlib.h>
 #include<stdio.h>
 struct node{
